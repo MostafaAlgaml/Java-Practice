@@ -1,0 +1,3 @@
+A Java OOP project that models geometric structures using Point and Triangle classes. 
+It supports vector addition, triangle creation, copying, and rotation of vertices, while also tracking object creation using static variables.
+This project demonstrates constructors, method overloading, object manipulation, and encapsulation concepts.
