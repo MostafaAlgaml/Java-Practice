@@ -1,0 +1,1 @@
+A Java OOP simulation of rolling a pair of dice. The program randomly generates values between 1 and 6 for each die, continuously rolls until the total sum equals 2 (snake eyes), and tracks the number of attempts. This project demonstrates class design, encapsulation, random number generation, and loop control in Java.
