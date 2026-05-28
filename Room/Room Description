@@ -1,0 +1,4 @@
+A Java object-oriented programming project that simulates a hotel room booking system. 
+It manages room details such as guest name, room number, bed capacity, rental rate, and duration of stay. 
+The program includes functionality to calculate total cost and dynamically manage bed availability,
+demonstrating constructors, methods, encapsulation, and basic business logic.
