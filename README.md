@@ -1,2 +1,10 @@
-# Java-Practice
-Java programming practice covering Object-Oriented Programming concepts such as classes, constructors, methods, and simple projects like Room management, Dice simulation, and geometric shapes.
+Java Practice Repository
+
+This repository contains my Java programs while learning Object-Oriented Programming.
+
+Topics included:
+- Classes and Objects
+- Constructors
+- Methods
+- toString()
+- Simple projects (Room, Point, Dice, etc.)
