@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class printPascal
+{
+    public static int[][] build(int n)
+    {
+       int[][]pascal=new int[n][];
+       for (int i=0;i<n;i++){
+       	pascal[i]=new int[i+1];
+       }
+
+       for(int i=0;i<n;i++){
+       	for(int j=0;j<pascal[i].length;j++){
+       		if(j==0||j==pascal[i].length-1){
+       			pascal[i][j]=1;
+       		}
+       		else {
+       			pascal[i][j]=pascal[i-1][j-1]+pascal[i-1][j];
+       		}
+       	}
+       }
+       return pascal;
+    }
+
+    public static void print(int[][] pascal)
+    {
+        for (int i = 0; i < pascal.length; i++)
+        {
+            for (int j = 0; j < pascal[i].length; j++)
+            {
+                System.out.print(pascal[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void main(String[] args)
+    {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter number of rows: ");
+        int n = input.nextInt();
+
+        int[][] result = build(n);
+
+        print(result);
+    }
+}

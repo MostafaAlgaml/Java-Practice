@@ -1,0 +1,33 @@
+import java.util.*;
+public class Ragged {
+
+    public static boolean evaluate(boolean[][] a){
+    	boolean overrall=false;
+
+    	for (int i =0;i<a.length;i++){
+
+    		boolean row=true;
+
+    		for(int j=0;j<a[i].length;j++){
+
+    			row=row && a[i][j];
+    		}
+    		overrall=overrall ||row;
+    	}
+    	return overrall;
+    }
+
+
+
+
+    public static void main(String[] args) {
+
+    	boolean[][]b={
+    	{true,false,true},
+    	{true,true}
+    	};
+
+
+    	System.out.println(evaluate(b));
+    }
+}
