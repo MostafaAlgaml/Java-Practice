@@ -1,1 +1,52 @@
+public class sort
+{
+    // returns sum of one row
+    public static int rowSum(int[] row)
+    {
+        int sum = 0;
 
+        for (int i = 0; i < row.length; i++)
+        {
+            sum += row[i];
+        }
+
+        return sum;
+    }
+
+    // sorts rows based on row sum (descending order)
+    public static void sortRows(int[][] a)
+    {
+        for (int i = 0; i < a.length; i++)
+        {
+            for (int j = i + 1; j < a.length; j++)
+            {
+                if (rowSum(a[i]) < rowSum(a[j]))
+                {
+                    int[] temp = a[i];
+                    a[i] = a[j];
+                    a[j] = temp;
+                }
+            }
+        }
+    }
+
+    public static void main(String[] args)
+    {
+        int[][] b = {
+            {1, 2, 3},
+            {3, 3, 2},
+            {10, 10, 10}
+        };
+
+        sortRows(b);
+
+        for (int i = 0; i < b.length; i++)
+        {
+            for (int j = 0; j < b[i].length; j++)
+            {
+                System.out.print(b[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
