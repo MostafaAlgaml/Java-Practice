@@ -1,1 +1,19 @@
+import java.util.*;
+public class MinRec {
 
+    public static int MinRec(int[]a,int n){
+    if(n==1){
+    	return a[0];
+    }
+    int min=MinRec(a,n-1);
+    if(min>a[n-1])
+    	return a[n-1];
+    	return min;
+
+    }
+
+    public static void main(String[] args) {
+
+    	System.out.println(MinRec(a, a.length));
+    }
+}
